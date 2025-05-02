@@ -1,0 +1,164 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+);
+
+.homeSlider {
+  padding: 30px 0px;
+  position: relative;
+
+}
+
+.homeslidermain {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.homeslidermain .slick-track {
+  display: flex !important;
+}
+
+.homeslidermain img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 25px;
+
+}
+
+.homeslidermain *:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 47% !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  transform: translateY(-50%);
+  background-color: #bfc5c2 !important;
+  z-index: 1000 !important;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+
+}
+
+.slick-arrow:hover {
+  background-color: #3bb77e !important;
+}
+
+.slick-arrow.slick-next {
+  right: 20px !important;
+
+
+  
+}
+
+.slick-arrow.slick-prev {
+  left: 20px !important;
+  
+}
+
+.slick-next:before {
+  content: "\f105" !important;
+  font-family: FontAwesome !important;
+  font-size: 30px;
+  color: black;
+
+}
+
+.slick-next:hover::before {
+  color: #fff;
+}
+
+.slick-prev:before {
+  content: "\f104" !important;
+  font-family: FontAwesome !important;
+  font-size: 30px;
+  color: black;
+
+}
+
+.slick-prev:hover::before {
+  color: #fff;
+}
+
+.homeslidermain .slick-dots {
+  position: absolute;
+  bottom: 30px !important;
+}
+
+.homeslidermain .slick-dots button::before {
+  width: 10px !important;
+  height: 10px !important;
+  font-size: 16px !important;
+}
+
+.slick-active button::before {
+  color: #3bb77e  !important;
+}
+.homeslidermain .item{ position: relative;}
+.homeslidermain .item .info{ position: absolute;
+top: 15%;
+left: 5% ;
+z-index: 100;}
+.homeslidermain .item .info h1{ font-size: 70px; font-weight: bolder; color: rgba(0, 0, 0, 0.7);
+  background-color: transparent !important;
+  font-family: Quicksand, sans-serif;
+}
+.homeslidermain .item .info p{ font-size: 35px; font-weight: 500; color: #7e7e7e;
+  background-color: transparent !important;
+  font-family: Quicksand, sans-serif;
+  
+}
+.homeSlider .newsletterBanner
+{
+   width: 600px;
+   height: 60px;
+   position: absolute;
+   bottom: 100px;
+   left: 8%;
+   z-index: 10;
+}
+.homeSlider .newsletterBanner input{
+  
+  border-radius: 50px ;
+  border: 0;
+  padding-left: 80px;
+  padding-right: 200px;
+  outline: none !important;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  font-size: 20px;
+}
+.homeSlider .newsletterBanner button{
+  padding:  10px 50px !important;
+  border-radius: 50px !important;
+  color: #fff;
+  position: absolute !important;
+  background-color: #3bb77e;
+   top: 0px;
+   height: 60px !important;
+   right: 0px;
+   text-transform: capitalize;
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.homeSlider .newsletterBanner svg{
+  
+  position: absolute;
+  top :15px;
+  left: 30px;
+ transform: rotate(-25deg);
+ opacity: 0.5;
+  z-index: 10;
+  font-size: 30px !important;
+}
+   
+ 

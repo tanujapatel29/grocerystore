@@ -1,0 +1,97 @@
+.catSliderSection{
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+} 
+.catsliderMain .slick-slide  {
+    padding-right: 20px !important;
+   
+  }
+ .catsliderMain .item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f6fa;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    padding: 15px 0px;
+   
+    
+}
+.catsliderMain .item:hover{ 
+  border: 1px solid #3bb77e;
+
+  
+
+}
+.catsliderMain .item .info{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+   
+}
+
+.catsliderMain .item h3{
+  font-size: 15px;
+  font-weight: 600 !important;
+  text-align: center;
+}
+.catsliderMain .item p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  opacity: 0.8;
+  color: black;
+  margin-bottom: 0px;
+}
+.catsliderMain .slick-arrow {
+  position: absolute;
+  top: -35px !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #bfc5c2 !important;
+  z-index: 10;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-arrow:hover {
+  background-color: #3bb77e !important;
+}
+ .catsliderMain .slick-next{
+  right: 0px !important;
+  top: -35px !important;
+  
+}
+
+.catsliderMain .slick-prev{
+  right: 60px !important;
+  left: inherit !important;  
+}
+ 
+.slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-dots li button:before {
+    color: #3bb77e; /* Customize dot color */
+  }
+  .catsliderMain .item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .catsliderMain .item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }

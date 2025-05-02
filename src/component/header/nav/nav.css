@@ -1,0 +1,147 @@
+.nav {
+  width: auto;
+
+
+  height: 80px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: rgb(246, 246, 246);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative !important;
+}
+
+.nav {
+  position: relative;
+  overflow: visible;
+  /* allows dropdown to flow outside */
+}
+
+.dropdown-wrapper {
+  position: relative;
+  /* Makes .dropDownmenu absolute to this wrapper */
+}
+
+.nav .catTab {
+  text-transform: capitalize;
+  margin-top: 5px;
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: #3bb77e;
+
+}
+
+.nav ul li button {
+  text-transform: capitalize !important;
+  padding: 15px 18px;
+  transition: background-color 0.3s ease;
+  
+
+
+}
+
+.nav ul li button a {
+  text-decoration: none !important;
+
+  font-size: 18px;
+
+
+
+}
+
+.nav nav ul li {
+  position: relative;
+  text-decoration: none !important;
+}
+
+.nav .part1 {
+  margin-left: 5px;
+}
+
+.nav .part2 {
+  margin-top: 10px;
+  font-size: 20px !important;
+
+}
+
+
+.nav ul li button:hover a {
+  color: rgb(58, 208, 108) !important;
+}
+
+.nav .part3 .phNo svg {
+  font-size: 45px !important;
+  opacity: 0.8;
+
+}
+
+.nav .part3 .phNo h3 {
+  font-size: 30px !important;
+  line-height: 35px;
+}
+
+.nav .part3 .phNo p {
+  font-size: 15px !important;
+}
+
+.dropDownmenu {
+
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 200px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px 0px;
+  z-index: 1000;
+  margin-top: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.dropDownmenu li {
+  list-style: none;
+  width: 100%;
+  margin: 0px !important;
+}
+
+.dropDownmenu li button {
+  width: 100% !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+  top: left !important;
+  justify-content: flex-start !important;
+  text-transform: capitalize !important;
+  font-size: 16px !important;
+  padding: 10px 15px !important;
+  text-align: left;
+
+}
+
+/* Hover effect to show the dropdown */
+
+
+/* Dropdown list item styling */
+.dropDownmenu ul {
+  padding: 0;
+  margin: 0;
+
+}
+
+.dropDownmenu ul li:hover {
+  display: block;
+  color: rgb(58, 208, 108);
+  /* Hover effect for dropdown links */
+}
+
+nav .list-inline-item {
+  position: relative;
+}
+
+.dropdown-wrapper:hover .dropDownmenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}

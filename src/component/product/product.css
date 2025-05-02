@@ -1,0 +1,182 @@
+.productThub {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+
+}
+.productThub .badge{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    background-color: red;
+    font-size: 16px;
+    display: inline-block;
+    z-index: 10;
+    padding: 10px 25px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.productThub:hover {
+    box-shadow: 0 3px 6px #3bb77e, 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.productThub .imgWrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+.productThub:hover .imgWrapper img {
+    transform: scale(1.1);
+   
+}
+
+.productThub .imgWrapper .overlay {
+    position: absolute;
+    top: 0px !important;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+  
+}
+
+.productThub .imgWrapper:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.1);
+    
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.productThub .imgWrapper:hover img {
+    content: url('https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-2.jpg');
+    /* New image on hover */
+}
+
+.productThub .imgWrapper .overlay ul {
+    background-color: #fff;
+
+    height: auto;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    position: absolute;
+    gap: 0px !important;
+    margin: 0px !important;
+    overflow: hidden;
+    border: 1px solid #BCE3C9;
+
+
+}
+
+.productThub .imgWrapper .overlay ul li {
+    border-left: 1px solid #22c55e;
+    margin-right: 0px !important;
+}
+
+.productThub .imgWrapper .overlay ul li:first-child {
+    border-left: none;
+}
+
+.productThub .imgWrapper .overlay ul li a {
+    display: flex;
+    padding: 5px 8px;
+    /* 👈 smaller padding */
+    font-size: 15px;
+
+    align-items: center;
+    justify-content: center;
+    
+    transition: transform 0.2s ease;
+    gap: 0px !important;
+
+}
+.productThub .imgWrapper .overlay ul li a svg{
+    color: #3bb77e;
+}
+
+.productThub .imgWrapper .overlay ul li a:hover svg{
+    color: #12120f;
+    opacity: 0.7;
+}
+
+.productThub .imgWrapper .overlay ul li a:hover {
+    transform: scale(1.2);
+    
+    /* green hover */
+}
+
+
+
+.productThub .catName {
+    color: black;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.productThub .title {
+    margin: 10px 0px;
+}
+
+.productThub .title a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 22px;
+    margin-top: 0px !important;
+
+
+}
+
+.productThub .info button {
+
+    background-color: #def9ec;
+    color: #3bb77e;
+    padding: 5px 25px !important;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.productThub .info button:hover {
+    background-color: #3bb77e;
+
+    color: white;
+    padding: 5px 25px !important;
+}
+
+.productThub .brand a {
+    text-decoration: none;
+    margin-top: 0px !important;
+}
+
+.productThub .price {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-right: 20px;
+}
+
+.productThub .oldPrice {
+    font-size: 15px;
+
+    opacity: 0.6;
+    color: black;
+    text-decoration: line-through;
+}
+
