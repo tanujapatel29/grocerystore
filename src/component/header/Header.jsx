@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useRef } from 'react';
 
 import './header.css';
 import logo from '../../assets/images/logo.png';
@@ -19,7 +19,7 @@ import PinDropIcon from '@mui/icons-material/PinDrop';
 import Nav from './nav/nav';
 function Header() {
   const [isOpenDropDown, setisOpenDropDown] = useState(false);
-
+ const headerRef=useRef();
   const [categories, setcategories] = useState([
 
     'milk',
@@ -27,34 +27,22 @@ function Header() {
     'bread',
     'vegetable']);
 
-  /* const [countryList, setCountryList] = useState([]); 
-   useEffect(() => {
-     // Fetch countries data on component mount
-     getCountry('https://countriesnow.space/api/v0.1/countries/');
-   }, []);
-
-   const getCountry = async (url) => {
-     try {
-       const res = await axios.get(url);
-       if (res && res.data && Array.isArray(res.data.data)) {
-         // Safely extract country names and filter out any null or undefined entries
-         const countries = res.data.data.map(item => {
-           return item && item.country ? item.country : null;  // Return null if country is missing
-         }).filter(country => country !== null);  // Remove null entries
-         
-         setCountryList(countries);  // Update the state with the valid country names
-       } else {
-         console.log('Error: API response format is unexpected');
-       }
-     } catch (error) {
-       console.log('Error fetching countries:', error.message);
-     }
-   };
-
-*/
-
+      // Safely extract country names and filter out any null or undefined entries
+       
+      useEffect(() => {
+        window.addEventListener("scroll", () =>{
+          let position = window.pageYOffset;
+          if(position >100)
+          {
+            headerRef.current.classList.add('fixed');
+          }else{
+            headerRef.current.classList.remove('fixed');
+          }
+        })
+      },[])
   return (
-    <div>
+    <div >
+      <div className='headerWrapper' ref={headerRef}>
       <header>
         <div className='container-fluid'>
           <div className='row'>
@@ -135,6 +123,7 @@ function Header() {
       </header >
       <Nav />
     </div >
+    </div>
   )
 }
 
