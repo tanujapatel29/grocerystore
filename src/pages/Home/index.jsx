@@ -5,7 +5,10 @@ import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import CatSlider from '../../component/catSlider/catSlider';
 import Banners from '../../component/banners/banners';
+import homeb from '../../assets/images/homeb.jpg';
+import best from '../../assets/images/best.jpg';
 import Product from '../../component/product/product';
+import Productslider from './productslider/productslider';
 function Index() {
 
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -13,7 +16,7 @@ function Index() {
   const productsPerPage = 10;
 
   const categories = ['All', 'Milk & Dairies', 'Coffees & teas', 'Pet Foods', 'Meats', 'Vegetables', 'Fruits'];
- 
+  const daily = ['Featured', 'Popular', 'New added'];
   const allCategoryProducts = {
     All: Array.from({ length: 35 }, (_, i) => ({
       id: i + 1,
@@ -44,15 +47,15 @@ function Index() {
       badge: i % 2 === 0 ? 'Sale' : '',
     })),
   };
-  
- 
 
-// Dummy data with badges (example)
+
+
+  // Dummy data with badges (example)
 
 
 
   // 🧪 Dummy product array to simulate 35 products
- 
+
 
   // Pagination logic
   const selectedProducts = allCategoryProducts[selectedCategory] || [];
@@ -60,7 +63,7 @@ function Index() {
   const start = (currentPage - 1) * productsPerPage;
   const end = start + productsPerPage;
   const paginatedProducts = selectedProducts.slice(start, end);
-  
+
 
   // Function to render 2 rows of 5 products each
   const renderProductRows = () => {
@@ -68,7 +71,7 @@ function Index() {
     for (let i = 0; i < paginatedProducts.length; i += 5) {
       rows.push(
         <div className="productRow" key={i}>
-         {paginatedProducts.slice(i, i + 5).map((product) => (
+          {paginatedProducts.slice(i, i + 5).map((product) => (
             <div className="item" key={product.id}>
               <Product badgeLabel={product.badge} />
             </div>
@@ -79,11 +82,12 @@ function Index() {
     }
     return rows;
   };
+  
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
     setCurrentPage(1);
   };
-  
+
   return (
     <div>
       <Slider />
@@ -110,25 +114,70 @@ function Index() {
               ))}
             </ul>
           </div>
- {/* Render 10 products in 2 rows */}
- {renderProductRows()}
+          {/* Render 10 products in 2 rows */}
+          {renderProductRows()}
 
-{/* Pagination buttons */}
-<div className="pagination mt-4 text-center">
-  {Array.from({ length: totalPages }, (_, index) => (
-    <Button
-      key={index + 1}
-      onClick={() => setCurrentPage(index + 1)}
-      variant={currentPage === index + 1 ? 'contained' : 'outlined'}
-      className="mx-1"
-    >
-      {index + 1}
-    </Button>
-  ))}
-</div>
-</div>
+          {/* Pagination buttons */}
+          <div className="pagination mt-4 text-center">
+            {Array.from({ length: totalPages }, (_, index) => (
+              <Button
+                key={index + 1}
+                onClick={() => setCurrentPage(index + 1)}
+                variant={currentPage === index + 1 ? 'contained' : 'outlined'}
+                className="mx-1"
+              >
+                {index + 1}
+              </Button>
+            ))}
+          </div>
+        </div>
 
-</section>
+      </section>
+
+
+      <section className='homeProducts'>
+        <div className='container-fluid'>
+          <div className='d-flex align-items-center  justify-content-between'>
+            <h2 className='hd mb-0 mt-0'>Daily Best Sell</h2>
+            <ul className='list list-inline mb-0 fliterTab'>
+              {daily.map((item) => (
+                <li className="list-inline-item" key={item}>
+                  <Button onClick={() => handleCategoryClick(item)} disableRipple>
+                    <Link
+                      className={`text-link ${selectedCategory === item ? 'active' : ''}`}
+                      to="#"
+                    >
+                      {item}
+                    </Link>
+                  </Button>
+                </li>
+              ))}
+            </ul>
+            
+          
+          </div>
+           
+
+<br>
+</br><br></br>
+
+           <div className='row '>
+            <div className='col-md-3 '>
+              <img src={homeb} className='w-100 '/>
+            </div>
+            <div className='col-md-9'>
+<Productslider/>
+            </div>
+           </div>
+        
+
+        </div>
+         
+
+
+      </section>
+      
+
 
     </div>
   )

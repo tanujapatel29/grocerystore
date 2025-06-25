@@ -1,56 +1,63 @@
- .homeProducts{
-    margin-bottom: 300px !important;
-    padding: 25px 0px;
-    display: flex;
+ .homeProducts {
+   padding: 25px 0px;
+   display: flex;
  }
 
- .homeProducts a{ 
+ .homeProducts a {
    text-decoration: none;
  }
 
- 
- .homeProducts ul li button:hover a{
+
+ .homeProducts ul li button:hover a {
    color: #3bb77e !important;
    transform: translateY(-10px);
  }
- .homeProducts ul li button{
+
+ .homeProducts ul li button {
    font-size: 15px;
    font-weight: 600;
    transition: all 0.3s ease-in-out;
    position: relative;
  }
+
  .text-link.active {
    color: #3bb77e;
    font-weight: 600;
  }
- .homeProducts .productRow{ 
+
+ .homeProducts .productRow {
    display: flex;
-   padding: 5px 0px ;
+   padding: 5px 0px;
    margin: 0px -15px;
    gap: 5px;
-   
+
    justify-content: start;
    flex-wrap: wrap;
- 
+
  }
- .homeProducts .productRow .item{
+
+ .homeProducts .productRow .item {
    width: 20%;
    flex: 1;
    padding: 10px;
    max-width: 20%;
    box-sizing: border-box;
-     
- } 
- .homeProducts .productRow .item.placeholder{
-  visibility: hidden;
+
  }
+
+ .homeProducts .productRow .item.placeholder {
+   visibility: hidden;
+ }
+
  .homeProducts .pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-.homeProducts .pagination button{
-  margin: 0px 5px;
-  display: flex ;
-  
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
  }
+
+ .homeProducts .pagination button {
+   margin: 0px 5px;
+   display: flex;
+
+ }
+ 

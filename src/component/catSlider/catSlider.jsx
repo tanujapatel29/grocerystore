@@ -53,8 +53,9 @@ function CatSlider() {
       speed: 500,
       slidesToShow: 10,
       slidesToScroll: 1,
-
+         autoplay:2000,
       arrows: true,
+      centerMode:true
    };
 
    useEffect(() => {

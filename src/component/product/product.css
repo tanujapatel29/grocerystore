@@ -32,6 +32,15 @@
     position: relative;
 
 }
+.imgWrapper {
+  position: relative;
+}
+
+.imgWrapper img {
+  transition: opacity 0.3s ease;
+  display: block;
+  width: 100%;
+}
 
 
 
@@ -53,6 +62,7 @@
     justify-content: center;
     opacity: 0;
     visibility: hidden;
+    z-index: 3;
   
 }
 
@@ -60,19 +70,31 @@
     opacity: 1;
     visibility: visible;
     transform: scale(1.1);
-    
+    height: 200px !important;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.productThub .imgWrapper:hover img {
-    content: url('https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-2.jpg');
-    /* New image on hover */
+.imgWrapper .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.imgWrapper:hover .hover-img {
+  opacity: 1;
+}
+
+.imgWrapper:hover .main-img {
+  opacity: 0;
 }
 
 .productThub .imgWrapper .overlay ul {
     background-color: #fff;
 
-    height: auto;
+    
     flex-wrap: nowrap;
     border-radius: 10px;
     position: absolute;

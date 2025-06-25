@@ -11,7 +11,7 @@ import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import CompareArrowsOutlinedIcon from '@mui/icons-material/CompareArrowsOutlined';
 import Tooltip from '@mui/material/Tooltip';
-function Product(  {badgeLabel} ) {
+function Product({ badgeLabel }) {
   const badgeColors = {
     Hot: 'red',
     New: 'green',
@@ -27,6 +27,11 @@ function Product(  {badgeLabel} ) {
         <div className='imgWrapper cursor'>
           <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-1.jpg"
             className='w-100 transition' />
+            <img
+    src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-2.jpg"
+    className='hover-img w-100 transition'
+    alt='Hover Product'
+  />
           <div className='overlay transition' >
             <ul className='list list-inline mb-0'>
               <li className='list-inline-item'>

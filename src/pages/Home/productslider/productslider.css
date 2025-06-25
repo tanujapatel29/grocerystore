@@ -1,0 +1,15 @@
+.homeslidermain .slick-slide {
+  padding: 0 10px; /* 10px space on left and right = 20px total between slides */
+}
+
+.product-slide {
+  padding: 5px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.homeslidermain .slick-slide > div {
+  display: flex;
+  height: 100%;
+}
+
