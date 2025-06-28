@@ -8,6 +8,7 @@ import Banners from '../../component/banners/banners';
 import homeb from '../../assets/images/homeb.jpg';
 import best from '../../assets/images/best.jpg';
 import Product from '../../component/product/product';
+import Topproducts from '../../component/topproducts/topproducts';
 import Productslider from './productslider/productslider';
 function Index() {
 
@@ -176,7 +177,44 @@ function Index() {
 
 
       </section>
+      <section className='topProductsSection'>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col'>
+              <h3>Top Selling</h3>
+              <br/>
       
+              < Topproducts /><br/>
+              < Topproducts /><br/>
+              < Topproducts />
+            </div>
+            <div className='col'>
+               
+               <h3>Trending Products</h3>
+      <br/>
+              < Topproducts /><br/>
+              < Topproducts /><br/>
+              < Topproducts />
+            </div>
+            <div className='col'>
+             
+             <h3>Recently added</h3>
+      <br/>
+              < Topproducts /><br/>
+              < Topproducts /><br/>
+              < Topproducts />
+            </div>
+            <div className='col'>
+             
+             <h3>Top Rated</h3>
+      <br/>
+              < Topproducts /><br/>
+              < Topproducts /><br/>
+              < Topproducts />
+            </div>
+          </div>
+        </div>
+      </section>
 
 
     </div>

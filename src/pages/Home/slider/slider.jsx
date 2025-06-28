@@ -6,6 +6,8 @@ import slider2 from '../../../assets/images/slider2.png';
 import Fade  from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
+import Newsletter from '../../../component/newsletter/newsletter';
+
 
 function SliderComponent() {
   var settings = {
@@ -18,6 +20,7 @@ function SliderComponent() {
     arrows: true
   };
   return (
+    <>
     <section className='homeSlider'>
       <div className='container-fluid position-relative '>
         <Slider {...settings} className='homeslidermain'>
@@ -45,13 +48,10 @@ function SliderComponent() {
 
         </Slider>
 
-        <div className='newsletterBanner'>
-        <SendRoundedIcon />
-          <input type='email' placeholder='your email address' tabIndex={0} />
-          <Button className='bg-g ' > Subscribe</Button>
-        </div>
-      </div>
+        <Newsletter/>
+</div>
     </section>
+    </>
 
 
   )

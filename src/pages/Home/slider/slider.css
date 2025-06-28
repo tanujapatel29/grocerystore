@@ -114,51 +114,5 @@ z-index: 100;}
   background-color: transparent !important;
   font-family: Quicksand, sans-serif;
   
-}
-.homeSlider .newsletterBanner
-{
-   width: 600px;
-   height: 60px;
-   position: absolute;
-   bottom: 100px;
-   left: 8%;
-   z-index: 10;
-}
-.homeSlider .newsletterBanner input{
-  
-  border-radius: 50px ;
-  border: 0;
-  padding-left: 80px;
-  padding-right: 200px;
-  outline: none !important;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-  font-size: 20px;
-}
-.homeSlider .newsletterBanner button{
-  padding:  10px 50px !important;
-  border-radius: 50px !important;
-  color: #fff;
-  position: absolute !important;
-  background-color: #3bb77e;
-   top: 0px;
-   height: 60px !important;
-   right: 0px;
-   text-transform: capitalize;
-   font-size: 20px;
-   font-weight: 400;
-}
-
-.homeSlider .newsletterBanner svg{
-  
-  position: absolute;
-  top :15px;
-  left: 30px;
- transform: rotate(-25deg);
- opacity: 0.5;
-  z-index: 10;
-  font-size: 30px !important;
-}
-   
+}  
  
