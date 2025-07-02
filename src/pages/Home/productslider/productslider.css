@@ -1,4 +1,9 @@
+.homeslidermain{
+   position: relative;
+   z-index: 1;
+}
 .homeslidermain .slick-slide {
+  
   padding: 0 10px; /* 10px space on left and right = 20px total between slides */
 }
 

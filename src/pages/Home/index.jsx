@@ -6,10 +6,13 @@ import { Link } from 'react-router-dom';
 import CatSlider from '../../component/catSlider/catSlider';
 import Banners from '../../component/banners/banners';
 import homeb from '../../assets/images/homeb.jpg';
+import banner9 from '../../assets/images/banner9.png'
 import best from '../../assets/images/best.jpg';
 import Product from '../../component/product/product';
 import Topproducts from '../../component/topproducts/topproducts';
+import Newsletter from '../../component/newsletter/newsletter';
 import Productslider from './productslider/productslider';
+import Footer from '../../component/footer/Footer';
 function Index() {
 
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -83,7 +86,7 @@ function Index() {
     }
     return rows;
   };
-  
+
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
     setCurrentPage(1);
@@ -154,26 +157,26 @@ function Index() {
                 </li>
               ))}
             </ul>
-            
-          
+
+
           </div>
-           
 
-<br>
-</br><br></br>
 
-           <div className='row '>
+          <br>
+          </br><br></br>
+
+          <div className='row '>
             <div className='col-md-3 '>
-              <img src={homeb} className='w-100 '/>
+              <img src={homeb} className='w-100 ' />
             </div>
             <div className='col-md-9'>
-<Productslider/>
+              <Productslider />
             </div>
-           </div>
-        
+          </div>
+
 
         </div>
-         
+
 
 
       </section>
@@ -182,41 +185,62 @@ function Index() {
           <div className='row'>
             <div className='col'>
               <h3>Top Selling</h3>
-              <br/>
-      
-              < Topproducts /><br/>
-              < Topproducts /><br/>
+              <br />
+
+              < Topproducts /><br />
+              < Topproducts /><br />
               < Topproducts />
             </div>
             <div className='col'>
-               
-               <h3>Trending Products</h3>
-      <br/>
-              < Topproducts /><br/>
-              < Topproducts /><br/>
+
+              <h3>Trending Products</h3>
+              <br />
+              < Topproducts /><br />
+              < Topproducts /><br />
               < Topproducts />
             </div>
             <div className='col'>
-             
-             <h3>Recently added</h3>
-      <br/>
-              < Topproducts /><br/>
-              < Topproducts /><br/>
+
+              <h3>Recently added</h3>
+              <br />
+              < Topproducts /><br />
+              < Topproducts /><br />
               < Topproducts />
             </div>
             <div className='col'>
-             
-             <h3>Top Rated</h3>
-      <br/>
-              < Topproducts /><br/>
-              < Topproducts /><br/>
+
+              <h3>Top Rated</h3>
+              <br />
+              < Topproducts /><br />
+              < Topproducts /><br />
               < Topproducts />
             </div>
           </div>
         </div>
       </section>
 
+      <section className='newsLetterSection'>
 
+        <div className='container-fluid'>
+          <div className='box d-flex align-items-center'>
+            <div className='info'>
+            <h1 className='mb-3'>
+              Stay home & get your daily<br/>
+needs from our shop
+            </h1>
+            <p className='mb-65'>Start You'r Daily Shopping with Nest Mart</p>
+            <br/> <Newsletter/>
+            </div>
+            <div className='img'>
+               <img src={banner9} className='w-100' />
+                      
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  <Footer/>
     </div>
   )
 }

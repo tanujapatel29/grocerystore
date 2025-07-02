@@ -17,6 +17,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import PinDropIcon from '@mui/icons-material/PinDrop';
 import Nav from './nav/nav';
+
 function Header() {
   const [isOpenDropDown, setisOpenDropDown] = useState(false);
   const headerRef = useRef();

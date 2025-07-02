@@ -1,4 +1,114 @@
-h1{
- background-color: aquamarine;
+.footerWrapper{
+    padding: 45px 0px;
+    width: 100%;
+
+}
+.footerWrapper .footerBoxes .box{
+    background: #F4F6FA;
+    padding:15px ;
+    border-radius: 15px;
+    height: auto;
 }
 
+.footerWrapper .footerBoxes .box .img{
+    transition: transform 0.3s ease;
+}
+.footerWrapper .footerBoxes .box .img:hover{
+     transform: translateY(-5px);
+
+}
+.footerWrapper .footerBoxes .box .info{ padding-left: 25px;}
+.footerWrapper .footerBoxes .box .info p{
+    margin-bottom: 0px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.footerWrapper .footerBoxes .box .info h4{font-size: 18px;
+font-weight: 600;}
+footer{
+    padding: 60px 0px ;
+}
+
+footer .row p{
+    font-size: 18px;
+    
+opacity: 0.8;
+}
+ footer .icon{
+  color: #3bb77e !important;
+  padding-right: 8px;
+}
+ footer .part2 ul li{
+    list-style: none;
+    margin-bottom: 13px;
+ }
+ footer .part2 ul li a{
+    color: black;
+    opacity: 0.8;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+ }
+  footer .part2 ul li a:hover{
+    text-decoration: none;
+    opacity: 1;
+    padding-left: 5px;
+
+color: #3bb77e !important;}
+ footer .part2 h3{
+    margin-bottom : 20px;
+    color: black;
+    font-weight: 600;
+
+ }
+ footer .part3{
+    padding-left: 40px !important;
+ }
+  footer .part2{
+    padding-left: 20px !important;
+ }
+  footer .part1{
+    padding-left: 10px !important;
+ }
+ footer .lastString{
+    padding: 15px 0px;
+ }
+
+ 
+
+ .phNo svg {
+  font-size: 45px !important;
+  opacity: 0.8;
+
+}
+
+ .phNo h3 {
+  font-size: 30px !important;
+  line-height: 35px;
+}
+
+ .phNo p {
+  font-size: 15px !important;
+}
+footer .lastString .part3 h5{
+  margin-bottom: 0px;
+   
+}
+footer .lastString .part3 ul{
+  margin-bottom: 0px;
+  padding-left: 25px ;
+}
+footer .lastString .part3 ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color : #3bb77e;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+
+}
+footer .lastString .part3 ul li svg{
+  color: #fff !important;
+}

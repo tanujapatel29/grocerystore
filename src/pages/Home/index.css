@@ -92,3 +92,44 @@
     left: 0px;
     z-index: 10;
 }
+
+.newsLetterSection{
+  width: 100%;
+   height: auto;
+}
+.newsLetterSection .box{
+  background: url(../../assets/images/banner10.png);
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  padding: 40px;
+}
+.newsLetterSection .box .img{
+  
+  width: 45%;
+}
+.newsLetterSection .box .img img{ position: relative;
+  top: 40px;
+}
+.newsLetterSection .box .info{
+  width:55%;
+   padding: 20px;
+
+z-index: 100;
+}
+
+.newsLetterSection .info h1{ font-size: 45px; font-weight: bolder; color: rgba(0, 0, 0, 0.7);
+  background-color: transparent !important;
+  font-family: Quicksand;
+}
+.newsLetterSection .info p{ font-size: 20px; font-weight: 500; color: #7e7e7e;
+  background-color: transparent !important;
+  font-family: Quicksand, sans-serif;
+  
+} 
+.newsLetterSection .box .newsletterBanner{
+  position: relative !important;
+  left: 0px !important;
+  bottom: inherit !important;
+  
+}
